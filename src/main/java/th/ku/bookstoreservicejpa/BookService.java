@@ -28,7 +28,7 @@ public class BookService {
         return repository.findById(book.getId()).get();
     }
 
-    @PutMapping(value="/{id}")
+    @PutMapping("/{id}")
     public Book update(@PathVariable int id,
                        @RequestBody Book book) {
         Book record = repository.findById(id).get();
@@ -38,8 +38,8 @@ public class BookService {
         return record;
     }
 
-    @DeleteMapping(path ={"/{id}"})
-    public Book delete(@PathVariable("id") int id) {
+    @DeleteMapping("/{id}")
+    public Book delete(@PathVariable int id) {
         Book book = repository.findById(id).get();
         repository.deleteById(id);
         return book;
