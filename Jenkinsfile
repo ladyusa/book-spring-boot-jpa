@@ -7,7 +7,7 @@ pipeline {
           stage('Source') {
                steps {
                     git branch: 'master',
-                    url: 'https://github.com/ladyusa/book-spring-boot-jpa.git'
+                        url: 'https://github.com/ladyusa/book-spring-boot-jpa.git'
                }
           }
           stage('Build') {
