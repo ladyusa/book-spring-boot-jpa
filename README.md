@@ -22,7 +22,7 @@ __Possible calls:__
 	- http://localhost:8090/book/2
 	- http://localhost:8090/book/3
 
-3. POST a book (create using json format)
+3. POST a book (create using json format with header Content-Type: application/json)
 	- http://localhost:8090/book
 
 ```
